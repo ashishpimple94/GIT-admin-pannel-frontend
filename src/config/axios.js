@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || 'https://git-backend-new-4gds.onrender.com',
+  baseURL: process.env.REACT_APP_API_URL || 'https://git-backend-new-1.onrender.com',
   timeout: 30000, // Increased timeout for production API
   headers: {
     'Content-Type': 'application/json'

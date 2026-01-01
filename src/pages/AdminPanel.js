@@ -106,7 +106,7 @@ const AdminPanel = () => {
     try {
       setDownloadingReport(true);
       const [year, month] = reportMonth.split('-');
-      const apiBaseURL = process.env.REACT_APP_API_URL || 'https://git-backend-new-4gds.onrender.com';
+      const apiBaseURL = process.env.REACT_APP_API_URL || 'https://git-backend-new-1.onrender.com';
       const response = await fetch(`${apiBaseURL}/api/admin/reports/monthly?month=${month}&year=${year}`, {
         method: 'GET',
         headers: {
@@ -512,7 +512,7 @@ const AdminPanel = () => {
                       <span><i className="fas fa-paperclip"></i> Attachments ({selectedGrievance.attachments.length}):</span>
                       <div style={{ marginTop: '10px' }}>
                         {selectedGrievance.attachments.map((attachment, index) => {
-                          const apiBaseURL = process.env.REACT_APP_API_URL || 'https://git-backend-new-4gds.onrender.com';
+                          const apiBaseURL = process.env.REACT_APP_API_URL || 'https://git-backend-new-1.onrender.com';
                           const fileUrl = `${apiBaseURL}/uploads/${attachment.filePath}`;
                           return (
                             <a
